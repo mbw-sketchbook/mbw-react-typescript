@@ -2,7 +2,7 @@
 
 > Source: https://create-react-app.dev/docs/getting-started
 
-
+---
 - `webpack` and `Babel` are preconfigured and hidden from the user
     - `webpack` is a module bundler (optimizes code for production)
     - `Babel` is a transpiler (converts modern JS to older JS for compatibility)
