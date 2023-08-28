@@ -5,7 +5,7 @@
 DEV_DOCKER_IMAGE="node:18.17.1-slim"
 
 # What additional Docker flags should we use (if any)?
-ADDITIONAL_DOCKER_CONFIG='--cpus 2 -p 3000:3000'
+ADDITIONAL_DOCKER_CONFIG='--cpus 2 -p 3000:3000 -p 6006:6006'
 
 # =============================================================================
 
