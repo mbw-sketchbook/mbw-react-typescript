@@ -43,6 +43,16 @@ function dev_container {
                 docker exec -it "${container_name}" "${@}"
             fi
             ;;
+        "inspect")
+            shift
+            # echo "Checking for dev container."
+            if $(docker exec "${container_name}" sh 2>/dev/null); then
+                # echo "Dev container found."
+                docker inspect "${container_name}"
+            else 
+                echo "Dev container '${container_name}' not found."
+            fi
+            ;;
         "stop")
             shift
             # echo "Checking for dev container."
